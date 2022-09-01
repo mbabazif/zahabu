@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 urlpatterns=[
     url('^$',views.index,name = 'index'),
     url(r'^Events$', views.events, name='event'),
+    url(r'^About$', views.about, name='about'),
    
     ]
 if settings.DEBUG:

@@ -15,3 +15,8 @@ def index(request):
 def events(request):
     return render(request, 'events.html')
 
+def about(request):
+    return render(request, 'about.html')
+
+
+
