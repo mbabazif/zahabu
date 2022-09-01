@@ -4,11 +4,10 @@ from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
 
-app_name = "tax"
 
 urlpatterns=[
     url('^$',views.index,name = 'index'),
-    # url(r'^tax-office-locations$', views.location, name='location'),
+    url(r'^Events$', views.events, name='event'),
    
     ]
 if settings.DEBUG:
