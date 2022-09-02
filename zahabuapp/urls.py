@@ -9,6 +9,7 @@ urlpatterns=[
     url('^$',views.index,name = 'index'),
     url(r'^Events$', views.events, name='event'),
     url(r'^About$', views.about, name='about'),
+     url(r'^Deals$', views.deals, name='deal'),
    
     ]
 if settings.DEBUG:
