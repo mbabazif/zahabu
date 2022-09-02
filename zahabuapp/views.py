@@ -21,6 +21,11 @@ def about(request):
 def deals(request):
     return render(request, 'deal.html')
 
+def services(request):
+    return render(request, 'services.html')
+
+
+
 
 
 
