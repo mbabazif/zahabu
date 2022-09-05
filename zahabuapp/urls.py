@@ -11,6 +11,7 @@ urlpatterns=[
     url(r'^About$', views.about, name='about'),
     url(r'^Deals$', views.deals, name='deal'),
     url(r'^Services$', views.services, name='service'),
+    url('^Product', views.product, name='product'),
    
     ]
 if settings.DEBUG:
