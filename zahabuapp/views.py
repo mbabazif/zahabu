@@ -27,6 +27,10 @@ def services(request):
 def product(request):
     return render(request, 'side_navbar/product.html')
 
+def household(request):
+    return render(request, 'side_navbar/household.html')
+
+
 
 
 

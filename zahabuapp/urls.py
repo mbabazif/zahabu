@@ -12,6 +12,7 @@ urlpatterns=[
     url(r'^Deals$', views.deals, name='deal'),
     url(r'^Services$', views.services, name='service'),
     url('^Product', views.product, name='product'),
+    url('^Household', views.household, name='household'),
    
     ]
 if settings.DEBUG:
