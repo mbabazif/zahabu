@@ -76,14 +76,22 @@ WSGI_APPLICATION = 'zahabuproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'servers',
+#         'USER': 'florence',
+#     'PASSWORD': 'mba123456',
+#     }
+# }
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'servers',
-        'USER': 'florence',
-    'PASSWORD': 'mba123456',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(PROJECT_DIR, 'servers.db'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
